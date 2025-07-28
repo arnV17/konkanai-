@@ -4,6 +4,23 @@
 
 **URL**: https://lovable.dev/projects/ac226440-50b7-45f4-9e08-b84d503dba59
 
+## Features
+
+### Wildlife Background
+The project includes a custom wildlife-themed animated background featuring:
+- Animated birds flying across the screen
+- Swaying trees with realistic movement
+- Floating fireflies with glowing effects
+- Drifting clouds for atmosphere
+- Gradient backgrounds representing forest and ocean environments
+
+### Wildlife Page
+A dedicated wildlife page showcasing:
+- Wildlife conservation experiences
+- Local species information
+- Conservation impact statistics
+- Interactive wildlife tours and activities
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
@@ -59,6 +76,7 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- Canvas API (for wildlife animations)
 
 ## How can I deploy this project?
 

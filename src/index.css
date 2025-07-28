@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -52,6 +51,24 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* New design system variables */
+    --main: #88aaee;
+    --overlay: rgba(0, 0, 0, 0.8);
+    --bg: #dfe5f2;
+    --bw: #fff;
+    --blank: #000;
+    --text: #000;
+    --mtext: #000;
+    --ring-offset: #fff;
+    --border-radius: 5px;
+    --box-shadow-x: 4px;
+    --box-shadow-y: 4px;
+    --reverse-box-shadow-x: -4px;
+    --reverse-box-shadow-y: -4px;
+    --base-font-weight: 500;
+    --heading-font-weight: 700;
+    --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
   }
 
   .dark {
@@ -90,6 +107,15 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Dark mode design system variables */
+    --bg: #272933;
+    --bw: #212121;
+    --blank: #fff;
+    --text: #e6e6e6;
+    --mtext: #000;
+    --ring-offset: #000;
+    --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
   }
 }
 
@@ -119,6 +145,84 @@
   
   .bg-gradient-radial {
     background: radial-gradient(ellipse at center, var(--tw-gradient-stops));
+  }
+  
+  /* Fade-in animation for text elements */
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+    opacity: 0;
+  }
+  
+  /* Wildlife-themed animations */
+  .animate-bird-fly {
+    animation: bird-fly 8s ease-in-out infinite;
+  }
+  
+  .animate-tree-sway {
+    animation: tree-sway 4s ease-in-out infinite;
+  }
+  
+  .animate-firefly {
+    animation: firefly 3s ease-in-out infinite;
+  }
+  
+  .animate-cloud-drift {
+    animation: cloud-drift 20s linear infinite;
+  }
+}
+
+@keyframes bird-fly {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(20px) translateY(-10px);
+  }
+  50% {
+    transform: translateX(40px) translateY(0);
+  }
+  75% {
+    transform: translateX(20px) translateY(10px);
+  }
+}
+
+@keyframes tree-sway {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes firefly {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes cloud-drift {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
