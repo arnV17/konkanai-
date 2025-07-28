@@ -8,13 +8,21 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Middleware
-app.use(cors());
+// ✅ CORS Middleware: allow your frontend hosted on Vercel
+app.use(cors({
+  origin: 'https://konkanai-ccyn.vercel.app', // Frontend domain
+  methods: ['GET', 'POST', 'OPTIONS'],
+  credentials: true
+}));
+
+// ✅ Handle preflight OPTIONS requests
+app.options('*', cors());
+
 app.use(express.json());
 
-// Email transporter configuration
+// ✅ Email transporter configuration
 const transporter = nodemailer.createTransport({
-  service: 'gmail', // or your email service
+  service: 'gmail',
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS
@@ -24,19 +32,19 @@ const transporter = nodemailer.createTransport({
   }
 });
 
+// Debug logs (optional)
 console.log('EMAIL_USER:', process.env.EMAIL_USER);
 console.log('EMAIL_PASS:', process.env.EMAIL_PASS ? '***MASKED***' : 'NOT SET');
 console.log('NOTIFICATION_EMAIL:', process.env.NOTIFICATION_EMAIL);
 
-// Contact form endpoint
+// ✅ Contact form route
 app.post('/api/contact', async (req, res) => {
   try {
     const { firstName, lastName, email, subject, message, timestamp, type } = req.body;
 
-    // Email content for notification
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: process.env.NOTIFICATION_EMAIL, // your notification email
+      to: process.env.NOTIFICATION_EMAIL,
       subject: `New ${type} from Konkanai Website`,
       html: `
         <h2>New ${type} Received</h2>
@@ -51,16 +59,16 @@ app.post('/api/contact', async (req, res) => {
       `
     };
 
-    // Send email notification
     await transporter.sendMail(mailOptions);
-
     res.status(200).json({ message: 'Message sent successfully' });
+
   } catch (error) {
     console.error('Email sending error:', error);
     res.status(500).json({ error: 'Failed to send message' });
   }
 });
 
+// ✅ Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
-}); 
+});
