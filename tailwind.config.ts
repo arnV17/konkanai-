@@ -10,6 +10,9 @@ export default {
 	],
 	prefix: "",
 	theme: {
+		fontFamily: {
+			sans: ['Yatra One', 'cursive'],
+		},
 		container: {
 			center: true,
 			padding: '2rem',

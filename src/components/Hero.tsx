@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Fixed Konkanai Logo - disappears after scrolling */}
       <Link
         to="/"
-        className={`fixed top-6 left-6 z-50 text-2xl font-bold text-cream-500 hover:text-sunset-500 transition-all duration-300 animate-fade-in ${
+        className={`fixed top-6 left-6 z-50 text-4xl font-bold text-cream-500 hover:text-sunset-500 transition-all duration-300 animate-fade-in ${
           scrollY > 500 ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
         style={{ animationDelay: '0.2s' }}
@@ -46,15 +46,18 @@ const Hero = () => {
         <div className="relative z-[9999] pointer-events-auto flex-1 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto">
         {/* Headline */}
         <h2
-          className="mt-28 text-4xl md:text-6xl font-bold text-white mb-4 leading-tight animate-fade-in"
-          style={{ 
-            transform: `translateY(${scrollY * 0.12}px)`,
-            animationDelay: '0.3s'
-          }}
-        >
-          Experience Authentic<br />
-          <span className="text-sunset-500">Malvani Culture Amidst Nature</span>
-        </h2>
+     className="mt-28 text-7xl md:text-8xl leading-tight font-bold text-white mb-4 animate-fade-in"
+  style={{
+    transform: `translateY(${scrollY * 0.12}px)`,
+    animationDelay: '0.3s',
+  }}
+>
+  
+  
+  <span className="text-sunset-700 text-7xl md:text-8xl leading-tight">Experience Authentic </span>
+  <span className="text-sunset-500 text-7xl md:text-8xl leading-tight">मालवणी </span>
+  <span className="text-sunset-700 text-7xl md:text-8xl leading-tight">Culture Amidst Nature</span>
+</h2>
 
         {/* Subheading */}
         <p
@@ -64,19 +67,11 @@ const Hero = () => {
             animationDelay: '0.7s'
           }}
         >
-          Discover the Konkan coast through immersive journeys that honor tradition, uplift local lives,
-          and protect the wild beauty of our homeland.
+          
         </p>
 
           {/* Contact Us and Explore Buttons */}
-          <div className="mt-8 relative w-full flex justify-center z-[9999] pointer-events-auto gap-4">
-            <div onClick={() => navigate('/gallery')} className="cursor-pointer">
-              <Button4 label="Explore" color="green" />
-            </div>
-            <div onClick={() => navigate('/contact')} className="cursor-pointer">
-              <Button4 label="Contact" color="red" />
-        </div>
-        </div>
+          
       </div>
     </WildlifeBackground>
     </>
