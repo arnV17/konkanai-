@@ -8,23 +8,66 @@ import { Home, User, Image as GalleryIcon, Briefcase, Mail } from "lucide-react"
 // Activities list
 const activities = [
   {
-    title: "Rice Cultivatiom",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+    title: "Explore Untouched Beaches",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1920&auto=format&fit=crop"
+  },
+  {
+    title: "Forts & Heritage Sites",
+    image: "https://images.unsplash.com/photo-1603015449628-19f299b32cc9?q=80&w=1920&auto=format&fit=crop"
+  },
+  {
+    title: "Ancient Temple Tours",
+    image: "https://images.unsplash.com/photo-1616051033545-fd0d3fdcb451?q=80&w=1920&auto=format&fit=crop"
+  },
+  {
+    title: "Agricultural Activities",
+    image: "https://images.unsplash.com/photo-1616331526486-6f0877ec4b7d?q=80&w=1920&auto=format&fit=crop"
+  },
+  {
+    title: "Heritage Home Walk",
+    image: "https://images.unsplash.com/photo-1631624214718-c4d791d305f6?q=80&w=1920&auto=format&fit=crop"
+  },
+  {
+    title: "Cultural Activities",
+    image: "https://images.unsplash.com/photo-1604151709798-86b042a3718a?q=80&w=1920&auto=format&fit=crop"
   },
   {
     title: "Bird Watching",
-    image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1516569422863-af1c1c9f50d2?q=80&w=1920&auto=format&fit=crop"
   },
   {
-    title: "Cultural Experience",
-    image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80"
+    title: "Butterfly Trail (40+ species)",
+    image: "https://images.unsplash.com/photo-1506224774227-231b4fa01770?q=80&w=1920&auto=format&fit=crop"
   },
   {
-    title: "Wildlife Photography",
-    image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80"
+    title: "Jungle Trails",
+    image: "https://images.unsplash.com/photo-1559599101-730fae5b1577?q=80&w=1920&auto=format&fit=crop"
+  },
+  {
+    title: "River Trails",
+    image: "https://images.unsplash.com/photo-1579033461380-1ffcf47267a5?q=80&w=1920&auto=format&fit=crop"
+  },
+  {
+    title: "Kayaking in Backwaters",
+    image: "https://images.unsplash.com/photo-1514474959185-dab031c4fd38?q=80&w=1920&auto=format&fit=crop"
+  },
+  {
+    title: "Mangrove Backwater Safari",
+    image: "https://images.unsplash.com/photo-1572347074865-2e574d4b8b9d?q=80&w=1920&auto=format&fit=crop"
+  },
+  {
+    title: "Watersports",
+    image: "https://images.unsplash.com/photo-1533115078665-b7df8e52c4d8?q=80&w=1920&auto=format&fit=crop"
+  },
+  {
+    title: "Bonfire with Camping",
+    image: "https://images.unsplash.com/photo-1581338834647-b89c84f4b10f?q=80&w=1920&auto=format&fit=crop"
+  },
+  {
+    title: "Delicious Malvani Food",
+    image: "https://images.unsplash.com/photo-1633606093640-798a43e20700?q=80&w=1920&auto=format&fit=crop"
   }
 ];
-
 const navItems = [
   { name: 'Home', url: '/', icon: Home },
   { name: 'About', url: '/about', icon: User },

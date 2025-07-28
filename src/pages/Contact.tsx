@@ -39,7 +39,7 @@ const Contact = () => {
 
     try {
       // Send email notification using EmailJS or similar service
-      const response = await fetch('http://localhost:3001/api/contact', {
+      const response = await fetch('https://konkanai.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -190,16 +190,16 @@ const Contact = () => {
                   <Mail className="w-6 h-6 text-sunset-500 mt-1" />
                   <div>
                     <h3 className="text-lg font-semibold text-cream-500 mb-1">Email</h3>
-                    <p className="text-cream-500/80">info@konkanai.com</p>
-                    <p className="text-cream-500/80">bookings@konkanai.com</p>
+                    <p className="text-cream-500/80">konkanai.agrotourism@gmail.com</p>
+                    
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <Phone className="w-6 h-6 text-sunset-500 mt-1" />
                   <div>
                     <h3 className="text-lg font-semibold text-cream-500 mb-1">Phone</h3>
-                    <p className="text-cream-500/80">+91 98765 43210</p>
-                    <p className="text-cream-500/80">+91 98765 43211</p>
+                    <p className="text-cream-500/80">+91 75063 28709</p>
+                    <p className="text-cream-500/80">+91 94042 60309</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">

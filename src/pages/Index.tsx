@@ -3,11 +3,12 @@ import Hero from "@/components/Hero";
 import Experiences from "@/components/Experiences";
 import Sustainability from "@/components/Sustainability";
 import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
+
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { ParallaxContext } from "@/components/WildlifeBackground";
 import { useContext } from "react";
+import Contact from "./Contact"
 import Explore from "./Explore";
 
 const sectionAnim = (delay = 0) => ({

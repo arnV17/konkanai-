@@ -8,53 +8,55 @@ import { ParallaxContext } from "./WildlifeBackground";
 const experiences = [
   {
     title: "Agricultural Activities",
-    description: "Beach clean-ups, turtle watching, and fishing with local communities along the pristine Konkan coastline.",
+    description: "Engage with local farmers, learn traditional farming methods, and experience organic cultivation techniques that sustain rural livelihoods.",
     image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=7360&auto=format&fit=crop",
     highlights: ["Turtle Conservation", "Sustainable Fishing", "Beach Restoration"]
   },
   {
     title: "Jungle Trail",
-    description: "Trek through the Sahyadri mountains, discover hidden waterfalls, and visit authentic tribal villages.",
+    description: "Embark on an exhilarating trek through the dense Sahyadri ranges, explore hidden waterfalls, and interact with indigenous tribes living in harmony with nature.",
     image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=3506&auto=format&fit=crop",
     highlights: ["Sahyadri Trekking", "Waterfall Photography", "Tribal Heritage"]
   },
   {
     title: "Butterfly Trail",
-    description: "Learn traditional cooking, master local handicrafts, and experience authentic folk performances.",
+    description: "Wander through lush butterfly gardens and forest patches where you’ll observe rare and endemic butterfly species and learn about their ecological importance.",
     image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=6000&auto=format&fit=crop",
-    highlights: ["Cooking Classes", "Handicraft Workshops", "Folk Performances"]
+    highlights: ["Butterfly Watching", "Nature Interpretation", "Eco-learning Walks"]
   },
   {
     title: "Birdwatching Trail",
-    description: "Learn traditional cooking, master local handicrafts, and experience authentic folk performances.",
+    description: "Join expert-led trails to spot migratory and native birds in serene mangroves and forest habitats, ideal for photographers and birding enthusiasts.",
     image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=6000&auto=format&fit=crop",
-    highlights: ["Cooking Classes", "Handicraft Workshops", "Folk Performances"]
+    highlights: ["Wetland Birds", "Migratory Species", "Guided Walks"]
   },
   {
     title: "Heritage Home",
-    description: "Learn traditional cooking, master local handicrafts, and experience authentic folk performances.",
+    description: "Stay in beautifully preserved traditional Konkan houses, enjoy authentic hospitality, and immerse yourself in regional architecture, cuisine, and customs.",
     image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=6000&auto=format&fit=crop",
-    highlights: ["Cooking Classes", "Handicraft Workshops", "Folk Performances"]
+    highlights: ["Konkan Architecture", "Local Cuisine", "Village Lifestyle"]
   },
   {
     title: "Mangrove Trail",
-    description: "Participate in bird watching expeditions, forest conservation projects, and nature photography tours.",
+    description: "Paddle or walk through peaceful mangrove forests, learn about their role in coastal protection, and witness the incredible biodiversity they support.",
     image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=3634&auto=format&fit=crop",
-    highlights: ["Bird Watching", "Forest Conservation", "Wildlife Photography"]
+    highlights: ["Mangrove Ecology", "Bird Watching", "Wildlife Photography"]
   },
   {
     title: "Authentic Malvani Cuisine",
-    description: "Learn traditional cooking, master local handicrafts, and experience authentic folk performances.",
+    description: "Participate in hands-on cooking sessions to master age-old Malvani recipes, explore spice gardens, and savor home-cooked meals with coastal flavors.",
     image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=6000&auto=format&fit=crop",
-    highlights: ["Cooking Classes", "Handicraft Workshops", "Folk Performances"]
+    highlights: ["Cooking Classes", "Spice Tours", "Seafood Tastings"]
   },
   {
     title: "Cultural Events",
-    description: "Learn traditional cooking, master local handicrafts, and experience authentic folk performances.",
+    description: "Celebrate the region’s rich heritage through lively folk performances, traditional dances, and community festivals that reflect Konkan’s unique spirit.",
     image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=6000&auto=format&fit=crop",
-    highlights: ["Cooking Classes", "Handicraft Workshops", "Folk Performances"]
+    highlights: ["Folk Music", "Dance Performances", "Seasonal Festivals"]
   },
 ];
+
+
 
 const Experiences = () => {
   const { scrollY } = useContext(ParallaxContext);

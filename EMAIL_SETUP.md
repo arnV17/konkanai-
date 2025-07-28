@@ -52,7 +52,7 @@ The server will run on port 3001.
 In your `src/pages/Contact.tsx`, make sure the API endpoint points to your server:
 
 ```javascript
-const response = await fetch('http://localhost:3001/api/contact', {
+const response = await fetch('https://konkanai.onrender.com/api/contact', {
   // ... rest of the code
 });
 ```
