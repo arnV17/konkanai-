@@ -1,51 +1,50 @@
+import React, { useEffect } from 'react';
+import InstagramEmbed from './ui/Insta';
 
+// --- Data Arrays ---
 const sustainabilityStats = [
-  {
-    number: "500+",
-    label: "Trees Planted",
-    description: "Native species restoration across Konkan forests"
-  },
-  {
-    number: "50+",
-    label: "Local Families",
-    description: "Empowered through sustainable tourism employment"
-  },
-  {
-    number: "95%",
-    label: "Waste Diverted",
-    description: "From landfills through our zero-waste programs"
-  },
-  {
-    number: "12",
-    label: "Conservation Projects",
-    description: "Actively supported across Maharashtra"
-  }
+  { number: "500+", label: "Trees Planted", description: "Native species restoration across Konkan forests" },
+  { number: "50+", label: "Local Families", description: "Empowered through sustainable tourism employment" },
+  { number: "95%", label: "Waste Diverted", description: "From landfills through our zero-waste programs" },
+  { number: "12", label: "Conservation Projects", description: "Actively supported across Maharashtra" }
 ];
 
 const commitments = [
-  {
-    title: "Carbon Neutral Travel",
-    description: "All our tours are carbon-neutral through verified offset programs and renewable energy partnerships."
-  },
-  {
-    title: "Community First",
-    description: "75% of tour profits directly benefit local communities through fair wages and development projects."
-  },
-  {
-    title: "Wildlife Protection",
-    description: "Active partnerships with conservation organizations to protect endangered species and habitats."
-  },
-  {
-    title: "Cultural Preservation",
-    description: "Supporting traditional arts, crafts, and knowledge systems of indigenous communities."
-  }
+  { title: "Carbon Neutral Travel", description: "All our tours are carbon-neutral through verified offset programs and renewable energy partnerships." },
+  { title: "Community First", description: "75% of tour profits directly benefit local communities through fair wages and development projects." },
+  { title: "Wildlife Protection", description: "Active partnerships with conservation organizations to protect endangered species and habitats." },
+  { title: "Cultural Preservation", description: "Supporting traditional arts, crafts, and knowledge systems of indigenous communities." }
 ];
 
 const Sustainability = () => {
   return (
     <section className="py-20 bg-forest-500 text-white">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
+
+
+        {/* Instagram Reels Section */}
+        <div className="mt-20 text-center px-4">
+          <h3 className="text-3xl font-bold text-cream-500 mb-10">Follow Our Journey 📸</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
+            {/* Reel Card 1 */}
+            <div className="w-[280px] h-[480px] mx-auto p-3 rounded-xl bg-white/10 border border-white/20 shadow-md">
+              <InstagramEmbed url="https://www.instagram.com/reel/DLXqDYASKpH/" />
+            </div>
+
+            {/* Reel Card 2 (Placeholder) */}
+            <div className="w-[280px] h-[480px] mx-auto p-3 rounded-xl bg-white/10 border border-white/20 shadow-md flex items-center justify-center text-cream-500/60 text-sm italic">
+              <InstagramEmbed url="https://www.instagram.com/reel/DJpCxZKhLDX" />
+            </div>
+
+            {/* Reel Card 3 (Placeholder) */}
+            <div className="w-[280px] h-[480px] mx-auto p-3 rounded-xl bg-white/10 border border-white/20 shadow-md flex items-center justify-center text-cream-500/60 text-sm italic">
+              <InstagramEmbed url="https://www.instagram.com/reel/DLxkN55SnB9 " />
+            </div>
+          </div>
+        </div>
+
+
+        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Our Commitment to
@@ -56,8 +55,8 @@ const Sustainability = () => {
           </p>
           <div className="w-24 h-1 bg-sunset-500 mx-auto mt-6 rounded-full" />
         </div>
-        
-        {/* Impact Statistics */}
+
+        {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
           {sustainabilityStats.map((stat, index) => (
             <div key={index} className="text-center">
@@ -75,11 +74,14 @@ const Sustainability = () => {
             </div>
           ))}
         </div>
-        
-        {/* Commitment Grid */}
+
+        {/* Commitments */}
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {commitments.map((commitment, index) => (
-            <div key={index} className="bg-ocean-500/20 backdrop-blur-sm p-8 rounded-2xl border border-cream-500/20 hover:bg-ocean-500/30 transition-all duration-300">
+            <div
+              key={index}
+              className="bg-ocean-500/20 backdrop-blur-sm p-8 rounded-2xl border border-cream-500/20 hover:bg-ocean-500/30 transition-all duration-300"
+            >
               <h3 className="text-2xl font-bold text-sunset-500 mb-4">
                 {commitment.title}
               </h3>
@@ -89,8 +91,9 @@ const Sustainability = () => {
             </div>
           ))}
         </div>
+
         
-        {/* Certification Badges */}
+        {/* Certifications */}
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-bold text-cream-500 mb-8">Certified & Recognized By</h3>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
@@ -105,6 +108,7 @@ const Sustainability = () => {
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );

@@ -29,7 +29,7 @@ const sampleMediaContent: MediaContentCollection = {
       'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1920&auto=format&fit=crop',
     background:
       'https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1920&auto=format&fit=crop',
-    title: 'मालवणी कोणकानी विश्व अनुभव',
+    title: 'अस्सल कोकणी विश्व अनुभव',
     date: '',
     scrollToExpand: 'Scroll to Explore',
     about: {
