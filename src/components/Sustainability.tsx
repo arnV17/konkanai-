@@ -23,22 +23,22 @@ const Sustainability = () => {
 
 
         {/* Instagram Reels Section */}
-        <div className="mt-20 text-center px-4">
+        <div className="mt-16 text-center">
           <h3 className="text-3xl font-bold text-cream-500 mb-10">Follow Our Journey 📸</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
             {/* Reel Card 1 */}
-            <div className="w-[280px] h-[480px] mx-auto p-3 rounded-xl bg-white/10 border border-white/20 shadow-md">
+            <div className="max-w-md mx-auto">
               <InstagramEmbed url="https://www.instagram.com/reel/DLXqDYASKpH/" />
             </div>
 
-            {/* Reel Card 2 (Placeholder) */}
-            <div className="w-[280px] h-[480px] mx-auto p-3 rounded-xl bg-white/10 border border-white/20 shadow-md flex items-center justify-center text-cream-500/60 text-sm italic">
+            {/* Reel Card 2 () */}
+            <div className="max-w-md mx-auto">
               <InstagramEmbed url="https://www.instagram.com/reel/DJpCxZKhLDX" />
             </div>
 
             {/* Reel Card 3 (Placeholder) */}
-            <div className="w-[280px] h-[480px] mx-auto p-3 rounded-xl bg-white/10 border border-white/20 shadow-md flex items-center justify-center text-cream-500/60 text-sm italic">
-              <InstagramEmbed url="https://www.instagram.com/reel/DLxkN55SnB9 " />
+            <div className="max-w-md mx-auto">
+              <InstagramEmbed url="https://www.instagram.com/reel/DLxkN55SnB9" />
             </div>
           </div>
         </div>

@@ -47,17 +47,17 @@ const Hero = () => {
         {/* Headline */}
         <h2
      className="mt-28 text-7xl md:text-8xl leading-tight font-bold text-white mb-4 animate-fade-in"
-  style={{
-    transform: `translateY(${scrollY * 0.12}px)`,
+          style={{ 
+            transform: `translateY(${scrollY * 0.12}px)`,
     animationDelay: '0.3s',
-  }}
->
+          }}
+        >
   
   
   <span className="text-sunset-700 text-7xl md:text-8xl leading-tight">Experience Authentic </span>
   <span className="text-sunset-500 text-7xl md:text-8xl leading-tight">मालवणी </span>
   <span className="text-sunset-700 text-7xl md:text-8xl leading-tight">Culture Amidst Nature</span>
-</h2>
+        </h2>
 
         {/* Subheading */}
         <p
