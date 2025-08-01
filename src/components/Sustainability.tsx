@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import InstagramEmbed from './ui/Insta';
+import InstagramEmbed from './ui/insta';
 
 // --- Data Arrays ---
 const sustainabilityStats = [
