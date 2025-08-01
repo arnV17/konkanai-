@@ -4,6 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { ArrowLeft, Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { NavBarDemo } from "@/components/ui/demo";
+import { Component as SocialMediaButtons } from "@/components/ui/demo";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -163,6 +164,11 @@ const Contact = () => {
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
+            {/* Social Media Buttons Below Form */}
+            <div className="flex flex-col items-center mt-10">
+              <h2 className="text-2xl font-semibold text-cream-500 mb-4">Connect with us</h2>
+              <SocialMediaButtons />
+            </div>
           </div>
 
           {/* Contact Information */}

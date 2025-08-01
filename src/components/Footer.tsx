@@ -1,4 +1,7 @@
 
+import { Button } from "@/components/ui/button";
+import { Facebook, Youtube, Instagram } from "lucide-react";
+
 const Footer = () => {
   return (
     <footer className="bg-forest-500 text-cream-500 py-12">
@@ -10,16 +13,16 @@ const Footer = () => {
             <p className="text-cream-500/80 mb-4 leading-relaxed">
               Sustainable ecotourism experiences in Maharashtra's beautiful Konkan region, preserving nature and empowering communities.
             </p>
-            <div className="flex space-x-4">
-              <div className="w-8 h-8 bg-sunset-500 rounded-full flex items-center justify-center hover:bg-sunset-600 transition-colors cursor-pointer">
-                <span className="text-white text-sm">f</span>
-              </div>
-              <div className="w-8 h-8 bg-sunset-500 rounded-full flex items-center justify-center hover:bg-sunset-600 transition-colors cursor-pointer">
-                <span className="text-white text-sm">i</span>
-              </div>
-              <div className="w-8 h-8 bg-sunset-500 rounded-full flex items-center justify-center hover:bg-sunset-600 transition-colors cursor-pointer">
-                <span className="text-white text-sm">t</span>
-              </div>
+            <div className="flex space-x-3">
+              <Button variant="outline" size="icon" className="w-12 h-12 bg-sunset-500 border-sunset-500 text-white hover:bg-sunset-600 hover:border-sunset-600 transition-all duration-200 hover:scale-105">
+                <Facebook size={18} aria-hidden="true" />
+              </Button>
+              <Button variant="outline" size="icon" className="w-12 h-12 bg-sunset-500 border-sunset-500 text-white hover:bg-sunset-600 hover:border-sunset-600 transition-all duration-200 hover:scale-105">
+                <Instagram size={18} aria-hidden="true" />
+              </Button>
+              <Button variant="outline" size="icon" className="w-12 h-12 bg-sunset-500 border-sunset-500 text-white hover:bg-sunset-600 hover:border-sunset-600 transition-all duration-200 hover:scale-105">
+                <Youtube size={18} aria-hidden="true" />
+              </Button>
             </div>
           </div>
           
