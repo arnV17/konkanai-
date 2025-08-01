@@ -25,7 +25,8 @@ const Sustainability = () => {
         {/* Instagram Reels Section */}
         <div className="mt-16 text-center">
           <h3 className="text-3xl font-bold text-cream-500 mb-10">Follow Our Journey 📸</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center mb-[80px]">
+
             {/* Reel Card 1 */}
             <div className="max-w-md mx-auto">
               <InstagramEmbed url="https://www.instagram.com/reel/DLXqDYASKpH/" />

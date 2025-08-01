@@ -19,9 +19,7 @@ const Index = () => {
       <div>
         <VideoExpansion />
       </div>
-      <div>
-        <Hero />
-      </div>
+      
       <div>
         <Carousel3DDemo />
       </div>
